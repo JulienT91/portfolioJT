@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #383838;
+    font-family: 'Fira Sans', sans-serif;
+}
+ul.navbarlist {
+    list-style: none;
+}
+li.listItem {
+    color: #383833;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1.5rem;
+    transition: 0.3s;
+    &:hover {
+        background-color: #383833;
+        color: #34DC71;
+    }
+}
+
+
+.content {
+    color: #34DC71;
+    transition: 1s;
+    height: 100vh;
+    &.changeColor {
+        color: #28B1D0;
+        background-color: #5E686B;
+    }
+
+}
+
+
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+    padding:15px 10px;
+    transition:all ease-in-out;
+    
+}
+h1.reduce {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+#sideBar {
+    position:absolute;
+    width: 12.5rem;
+    height: 100%;
+    background: #34DC71;
+    display:flex;
+    justify-content: center;
+    left: -300px;
+    transition: 0.5s ease-out;
+    z-index: 2;
+}
+.toggleBtn {
+    position: absolute;
+    top: 2rem;
+    left: 320px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    transition: all 0.5s 0.3s;
+  
+    &:hover{
+        transform: rotate(1080deg);
+    }
+    span {
+        width: 60px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #34DC71;
+        display: block;
+        margin-top: 4px;
+        transition: .8s ease;
+    
+    }
+ 
+}
+a {
+    text-decoration: none;
+    color: #28B1D0;
+}
+
+#sideBar.active {
+    left: 0px;
+    background-color: #fbfbfb;
+    .toggleBtn {
+        top: 2rem;
+        left: 235px;
+        }
+    }
+
+#sideBar.active span {
+    position: absolute;
+    &:nth-child(1){
+        transform: rotate(45deg);
+        background-color: #28B1D0;
+    }
+    &:nth-child(2){
+        opacity: 0;
+    }
+    &:nth-child(3){
+        transform: rotate(-45deg);
+        background-color: #28B1D0;
+    }
+}
+
+#sideBar.active  ~ .content {
+    opacity: 0.3;
+}
+
+h2#about,h2#skill-title {
+    font-size: 2rem;
+    padding: 1rem;
+    display:flex;
+    justify-content: center;
+    &::before{
+        content: "-";
+    }
+    &::after{
+        content: "-";
+    }
+}
+
+.bgimg {
+    background:no-repeat url(../medias/code2.jpg);
+}
+.aboutimg {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 5rem;
+    .round-img {
+        border-radius: 50%;
+        transition: ease-in-out .8s;
+    }
+    .filter{
+        filter: sepia(50%);
+    }
+}
+h2#job-description {
+    text-align: center;
+    padding: 2rem;
+}
+.aboutme{
+    padding: 2rem 5rem;
+}
+.textChange{
+    padding: 2rem 15rem;
+}
+
+
+.list-group {
+    display: flex;
+}
+
+// responsive 
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 450px;
+ 
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+ 
+
+@mixin sm {
+    @media(max-width: #{$screen-sm-min}) {
+        @content;
+        
+    }    
+}
+
+@mixin md {
+    @media(min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+@include sm {
+   h1{
+       font-size: 2rem;
+       padding: 2rem;
+  
+   }
+   #sideBar {
+       position: fixed;
+   }
+   #sideBar.active{
+       width: 23.5rem;
+       height: 54%;
+       position: fixed;
+   }
+   #sideBar.active .toggleBtn {
+    top: 2rem;
+    left: 300px;
+}
+.textChange{
+    padding: 2rem 5rem;
+}
+}
