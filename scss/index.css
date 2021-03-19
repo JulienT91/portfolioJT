@@ -203,9 +203,12 @@ h2#job-description {
 
 .textChange {
   padding: 2rem 15rem;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
 }
 
 .grid-div {
+  padding: 0rem 7rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -264,6 +267,7 @@ h2#job-description {
   .grid-div {
     display: -ms-grid;
     display: grid;
+    padding: 5rem;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     gap: 1rem;
