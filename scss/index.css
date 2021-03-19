@@ -8,7 +8,7 @@
 
 body {
   background-color: #383838;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 ul.navbarlist {
@@ -28,19 +28,19 @@ li.listItem {
 
 li.listItem:hover {
   background-color: #383833;
-  color: #34DC71;
+  color: #34dc71;
 }
 
 .content {
-  color: #34DC71;
+  color: #34dc71;
   -webkit-transition: 1s;
   transition: 1s;
   height: 100vh;
 }
 
 .content.changeColor {
-  color: #28B1D0;
-  background-color: #5E686B;
+  color: #28b1d0;
+  background-color: #5e686b;
 }
 
 h1 {
@@ -66,7 +66,7 @@ h1.reduce {
   position: absolute;
   width: 12.5rem;
   height: 100%;
-  background: #34DC71;
+  background: #34dc71;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,16 +99,16 @@ h1.reduce {
   width: 60px;
   height: 10px;
   border-radius: 5px;
-  background-color: #34DC71;
+  background-color: #34dc71;
   display: block;
   margin-top: 4px;
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 a {
   text-decoration: none;
-  color: #28B1D0;
+  color: #28b1d0;
 }
 
 #sideBar.active {
@@ -128,7 +128,7 @@ a {
 #sideBar.active span:nth-child(1) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  background-color: #28B1D0;
+  background-color: #28b1d0;
 }
 
 #sideBar.active span:nth-child(2) {
@@ -138,14 +138,15 @@ a {
 #sideBar.active span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  background-color: #28B1D0;
+  background-color: #28b1d0;
 }
 
 #sideBar.active ~ .content {
   opacity: 0.3;
 }
 
-h2#about, h2#skill-title {
+h2#about,
+h2#skill-title {
   font-size: 2rem;
   padding: 1rem;
   display: -webkit-box;
@@ -156,11 +157,13 @@ h2#about, h2#skill-title {
           justify-content: center;
 }
 
-h2#about::before, h2#skill-title::before {
+h2#about::before,
+h2#skill-title::before {
   content: "-";
 }
 
-h2#about::after, h2#skill-title::after {
+h2#about::after,
+h2#skill-title::after {
   content: "-";
 }
 
@@ -180,8 +183,8 @@ h2#about::after, h2#skill-title::after {
 
 .aboutimg .round-img {
   border-radius: 50%;
-  -webkit-transition: ease-in-out .8s;
-  transition: ease-in-out .8s;
+  -webkit-transition: ease-in-out 0.8s;
+  transition: ease-in-out 0.8s;
 }
 
 .aboutimg .filter {
@@ -202,10 +205,18 @@ h2#job-description {
   padding: 2rem 15rem;
 }
 
-.list-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.grid-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.IconFsize {
+  font-size: 10rem;
 }
 
 @media (max-width: 450px) {
@@ -227,6 +238,15 @@ h2#job-description {
   }
   .textChange {
     padding: 2rem 5rem;
+  }
+  .grid-div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=index.css.map */
