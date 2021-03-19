@@ -158,7 +158,16 @@ h2#job-description {
 }
 
 // SKILL PART
-
+.grid-div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  text-align: center;
+}
+.IconFsize {
+  font-size: 10rem;
+}
 // responsive
 
 // Small tablets and large smartphones (landscape view)
@@ -198,5 +207,13 @@ $screen-md-min: 768px;
   }
   .textChange {
     padding: 2rem 5rem;
+  }
+  // SKILL PART
+  .grid-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    text-align: center;
   }
 }
