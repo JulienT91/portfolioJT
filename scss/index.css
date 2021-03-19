@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -50,8 +50,8 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 15px 10px;
   -webkit-transition: all ease-in-out;
   transition: all ease-in-out;
@@ -71,8 +71,8 @@ h1.reduce {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   left: -300px;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
@@ -92,7 +92,7 @@ h1.reduce {
 
 .toggleBtn:hover {
   -webkit-transform: rotate(1080deg);
-  transform: rotate(1080deg);
+          transform: rotate(1080deg);
 }
 
 .toggleBtn span {
@@ -127,7 +127,7 @@ a {
 
 #sideBar.active span:nth-child(1) {
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
   background-color: #28b1d0;
 }
 
@@ -137,7 +137,7 @@ a {
 
 #sideBar.active span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+          transform: rotate(-45deg);
   background-color: #28b1d0;
 }
 
@@ -153,8 +153,8 @@ h2#skill-title {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h2#about::before,
@@ -176,8 +176,8 @@ h2#skill-title::after {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2rem 5rem;
 }
 
@@ -189,7 +189,7 @@ h2#skill-title::after {
 
 .aboutimg .filter {
   -webkit-filter: sepia(50%);
-  filter: sepia(50%);
+          filter: sepia(50%);
 }
 
 h2#job-description {
@@ -209,7 +209,7 @@ h2#job-description {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1rem;
   justify-items: center;
   text-align: center;
@@ -217,6 +217,28 @@ h2#job-description {
 
 .IconFsize {
   font-size: 10rem;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+}
+
+.fa-html5:hover {
+  color: #ff8333;
+}
+
+.fa-css3-alt:hover {
+  color: #1083dc;
+}
+
+.fa-sass:hover {
+  color: #cb71ca;
+}
+
+.fa-js-square:hover {
+  color: #f7e140;
+}
+
+.fa-php:hover {
+  color: #9986bc;
 }
 
 @media (max-width: 450px) {
@@ -243,7 +265,7 @@ h2#job-description {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     gap: 1rem;
     justify-items: center;
     text-align: center;
