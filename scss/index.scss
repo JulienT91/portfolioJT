@@ -167,6 +167,22 @@ h2#job-description {
 }
 .IconFsize {
   font-size: 10rem;
+  transition: ease 0.8s;
+}
+.fa-html5:hover {
+  color: #ff8333;
+}
+.fa-css3-alt:hover {
+  color: #1083dc;
+}
+.fa-sass:hover {
+  color: #cb71ca;
+}
+.fa-js-square:hover {
+  color: #f7e140;
+}
+.fa-php:hover {
+  color: #9986bc;
 }
 // responsive
 
