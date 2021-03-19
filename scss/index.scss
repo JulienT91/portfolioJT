@@ -155,10 +155,12 @@ h2#job-description {
 }
 .textChange {
   padding: 2rem 15rem;
+  transition: ease 0.8s;
 }
 
 // SKILL PART
 .grid-div {
+  padding: 0rem 7rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1rem;
@@ -227,6 +229,7 @@ $screen-md-min: 768px;
   // SKILL PART
   .grid-div {
     display: grid;
+    padding: 5rem;
     grid-template-columns: 1fr;
     gap: 1rem;
     justify-items: center;
