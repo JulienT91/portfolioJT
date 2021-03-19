@@ -23,3 +23,26 @@ content.addEventListener("click", () => {
   roundImg.classList.remove("filter");
   aboutMe.classList.remove("textChange");
 });
+
+// animation effect
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.1,
+};
+const handleIntersect = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.intersectionRatio > 0.1) {
+      entry.target.classList.add("reveal-visible");
+      observer.unobserve(entry.target);
+    }
+  });
+  console.log("handeIntersect");
+};
+const observer = new IntersectionObserver(handleIntersect, options);
+document.querySelectorAll(".reveal-down").forEach((r) => {
+  observer.observe(r);
+});
+document.querySelectorAll(".reveal-up").forEach((r) => {
+  observer.observe(r);
+});
