@@ -6,7 +6,7 @@
   padding: 0;
 }
 body {
-  background-color: #383838;
+  background-color: #fffaf6;
   font-family: "Fira Sans", sans-serif;
 }
 
@@ -24,17 +24,17 @@ li.listItem {
   transition: 0.3s;
   &:hover {
     background-color: #383833;
-    color: #34dc71;
+    color: #fdb51e;
   }
 }
 
 .content {
-  color: #34dc71;
+  color: #fdb51e;
   transition: 1s;
   height: 100vh;
   &.changeColor {
     color: #28b1d0;
-    background-color: #5e686b;
+    background-color: #fcf9f2;
   }
 }
 
@@ -55,7 +55,6 @@ h1.reduce {
   position: absolute;
   width: 12.5rem;
   height: 100%;
-  background: #34dc71;
   display: flex;
   justify-content: center;
   left: -300px;
@@ -78,7 +77,7 @@ h1.reduce {
     width: 60px;
     height: 10px;
     border-radius: 5px;
-    background-color: #34dc71;
+    background-color: #fdb51e;
     display: block;
     margin-top: 4px;
     transition: 0.8s ease;
@@ -152,6 +151,13 @@ h2#job-description {
 }
 .aboutme {
   padding: 2rem 5rem;
+  color: #383833;
+  a {
+    color: #fdb51e;
+  }
+}
+.content-box {
+  color: #383833;
 }
 .textChange {
   padding: 2rem 15rem;
@@ -172,18 +178,23 @@ h2#job-description {
 }
 .fa-html5:hover {
   color: #ff8333;
+  transform: scale(1.1);
 }
 .fa-css3-alt:hover {
   color: #1083dc;
+  transform: scale(1.1);
 }
 .fa-sass:hover {
   color: #cb71ca;
+  transform: scale(1.1);
 }
 .fa-js-square:hover {
   color: #f7e140;
+  transform: scale(1.1);
 }
 .fa-php:hover {
   color: #9986bc;
+  transform: scale(1.1);
 }
 // onscroll Animation
 .reveal-down {
