@@ -167,6 +167,9 @@ h2#job-description {
 }
 
 // SKILL PART
+#skills {
+  padding: 2rem 5rem;
+}
 .grid-div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -255,6 +258,9 @@ $screen-md-min: 768px;
     padding: 2rem 5rem;
   }
   // SKILL PART
+  #skills {
+    padding: 0;
+  }
   .grid-div {
     display: grid;
     padding: 5rem;
