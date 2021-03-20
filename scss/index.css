@@ -220,6 +220,10 @@ h2#job-description {
   transition: ease 0.8s;
 }
 
+#skills {
+  padding: 2rem 5rem;
+}
+
 .grid-div {
   display: -ms-grid;
   display: grid;
@@ -305,6 +309,9 @@ h2#job-description {
   }
   .textChange {
     padding: 2rem 5rem;
+  }
+  #skills {
+    padding: 0;
   }
   .grid-div {
     display: -ms-grid;
