@@ -31,7 +31,7 @@ li.listItem {
 .content {
   color: #fdb51e;
   transition: 1s;
-  height: 100vh;
+
   &.changeColor {
     color: #28b1d0;
     background-color: #fcf9f2;
@@ -118,7 +118,8 @@ a {
 
 h2#about,
 h2#skill-title,
-h2#work-title {
+h2#work-title,
+h2#contact-title {
   font-size: 2rem;
   padding: 1rem;
   display: flex;
