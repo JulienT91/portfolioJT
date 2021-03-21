@@ -218,6 +218,31 @@ h2#job-description {
 // works
 
 //contact
+.contact-box {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 25px;
+  color: #383833;
+  .github-box {
+    place-self: end;
+    a:hover {
+      transition: ease 0.8s;
+      color: #fdb51e;
+    }
+  }
+  .linkedin-box {
+    a:hover {
+      transition: ease 0.8s;
+      color: #1083dc;
+    }
+  }
+  a {
+    color: #383833;
+  }
+  i {
+    font-size: 5rem;
+  }
+}
 
 // responsive
 
