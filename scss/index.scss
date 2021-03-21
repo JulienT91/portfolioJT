@@ -155,9 +155,9 @@ h2#job-description {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
   a {
     font-size: 5rem;
-    padding: 15px;
     color: #fdb51e;
     transition: ease 1s;
     &:hover {
