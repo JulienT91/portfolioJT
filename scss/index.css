@@ -211,11 +211,11 @@ h2#job-description {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 15px;
 }
 
 .curriculum-vitae a {
   font-size: 5rem;
-  padding: 15px;
   color: #fdb51e;
   -webkit-transition: ease 1s;
   transition: ease 1s;
