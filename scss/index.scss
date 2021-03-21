@@ -151,6 +151,21 @@ h2#job-description {
   text-align: center;
   padding: 2rem;
 }
+.curriculum-vitae {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    font-size: 5rem;
+    padding: 15px;
+    color: #fdb51e;
+    transition: ease 1s;
+    &:hover {
+      transform: scale(1.1);
+      color: #fffaf6;
+    }
+  }
+}
 .aboutme {
   padding: 2rem 5rem;
   color: #383833;
@@ -227,7 +242,7 @@ h2#job-description {
     place-self: end;
     a:hover {
       transition: ease 0.8s;
-      color: #fdb51e;
+      color: #9986bc;
     }
   }
   .linkedin-box {
@@ -241,6 +256,10 @@ h2#job-description {
   }
   i {
     font-size: 5rem;
+    transition: ease 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
