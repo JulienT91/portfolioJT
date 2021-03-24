@@ -231,6 +231,23 @@ h2#job-description {
   transition: 1.2s cubic-bezier(0.5, 0, 0, 1);
 }
 // works
+.work-container .github-box {
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fdb51e;
+  }
+  i {
+    font-size: 5rem;
+    padding-left: 1rem;
+  }
+  a:hover {
+    transition: ease 0.8s;
+    color: #9986bc;
+  }
+}
 .work-container h3 {
   padding: 2rem 6rem;
 }
@@ -243,25 +260,18 @@ h2#job-description {
 }
 //contact
 .contact-box {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 2rem;
   color: #383833;
   .mail-box {
-    padding: 1rem;
+    place-self: end;
     a:hover {
       transition: ease 0.8s;
       color: #fdb51e;
     }
   }
-  .github-box {
-    padding: 1rem;
-    a:hover {
-      transition: ease 0.8s;
-      color: #9986bc;
-    }
-  }
   .linkedin-box {
-    padding: 1rem;
     a:hover {
       transition: ease 0.8s;
       color: #1083dc;
