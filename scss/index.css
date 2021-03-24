@@ -332,22 +332,37 @@ h2#job-description {
 }
 
 .contact-box {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 6fr 6fr;
-      grid-template-columns: 6fr 6fr;
-  gap: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #383833;
 }
 
+.contact-box .mail-box {
+  padding: 1rem;
+}
+
+.contact-box .mail-box a:hover {
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+  color: #fdb51e;
+}
+
 .contact-box .github-box {
-  place-self: end;
+  padding: 1rem;
 }
 
 .contact-box .github-box a:hover {
   -webkit-transition: ease 0.8s;
   transition: ease 0.8s;
   color: #9986bc;
+}
+
+.contact-box .linkedin-box {
+  padding: 1rem;
 }
 
 .contact-box .linkedin-box a:hover {
